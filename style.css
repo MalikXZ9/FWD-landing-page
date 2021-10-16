@@ -119,7 +119,7 @@ body {
 }
 
 .header {
-  font-size: 9.375rem;
+  font-size: 8.75rem;
 }
 
 .s--text-container {
@@ -144,4 +144,64 @@ footer {
 footer p {
   padding: 2rem;
   color: white;
+}
+
+@media (max-width: 1420px) {
+  .header {
+    font-size: 6.5rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .hero--heading {
+    font-size: 2.75rem;
+  }
+  .hero--sub {
+    font-size: 1.7rem;
+  }
+  .hero--main-content img {
+    width: 30rem;
+  }
+  .nav--link {
+    font-size: 0.875rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .hero--text-content {
+    height: 40vh;
+  }
+  .header {
+    font-size: 5.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav {
+    display: none;
+  }
+  .hero--main-content {
+    height: 70vh;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero--main-content img {
+    /* margin-top: rem; */
+    width: 17rem;
+  }
+  .hero--text-content {
+    text-align: center;
+    width: 80%;
+    align-items: center;
+    height: 30vh;
+  }
+  .hero--heading {
+    font-size: 1.875rem;
+  }
+  .hero--sub {
+    font-size: 1.2rem;
+  }
+  .hero--btn {
+    font-size: 1.25rem;
+  }
 }
