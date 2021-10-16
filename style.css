@@ -17,11 +17,6 @@ body {
   overflow: hidden visible;
 }
 
-.hero-section {
-  height: 100vh;
-  width: 100vw;
-}
-
 .hamburger--nav {
   display: none;
 }
@@ -34,6 +29,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* position: absolute; */
+  /* top: 0; */
 }
 
 .logo {
@@ -55,7 +52,29 @@ body {
   text-decoration: none;
 }
 
+.selected {
+  color: var(--accent-clr);
+  font-weight: 700;
+}
+/* --------------Hamburger animation-------------- */
+.h--top-a {
+  transform: rotate(45deg);
+}
+.h--middle-a {
+  transform: translateX(5px);
+  opacity: 0;
+}
+.h--bottom-a {
+  transform: rotate(-45deg);
+}
+
 /* --------------Hero Content-------------- */
+
+.hero-section {
+  height: 100vh;
+  width: 100vw;
+}
+
 .hero-bg {
   z-index: -1;
   position: absolute;
@@ -107,6 +126,7 @@ body {
   font-weight: bold;
   width: max-content;
   padding: 0.3em 2em;
+  cursor: pointer;
   transition: transform 300ms ease-out, box-shadow 300ms ease-in-out;
 }
 
@@ -149,7 +169,7 @@ body {
   width: 70%;
   font-size: 1.563rem;
 }
-
+/* --------------Footer-------------- */
 footer {
   display: grid;
   place-items: center;
@@ -302,6 +322,8 @@ footer p {
     height: 3px;
     background-color: var(--accent-clr);
     border-radius: 5px;
+    transform-origin: 0.7px 1px;
+    transition: transform 500ms ease-out, opacity 200ms ease-out;
   }
   .hamburger--menu {
     position: absolute;
