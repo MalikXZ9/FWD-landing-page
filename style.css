@@ -22,7 +22,7 @@ body {
   width: 100vw;
 }
 
-.h-nav--link {
+.hamburger--nav {
   display: none;
 }
 /* --------------Navigation---------------- */
@@ -247,6 +247,9 @@ footer p {
 }
 
 @media (max-width: 500px) {
+  .hamburger--nav {
+    display: block;
+  }
   .nav {
     display: none;
   }
@@ -324,7 +327,6 @@ footer p {
     list-style: none;
   }
   .h-nav--link {
-    display: block;
     color: var(--dark-clr);
     font-size: 0.875rem;
     text-decoration: none;
